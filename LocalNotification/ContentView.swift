@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var notificationManger = NotificationManager()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(notificationManger.notifications, id: \.identifier) {notification in
+            Text(notification.content.title)
+                .fontWeight(.semibold)
         }
-        .padding()
+        .listStyle(InsetGroupedListStyle())
+        .navigationTitle("Notifications")
+        .onAppear(perform: notificationManger.reloadAuthorizationStatus)
+        .onChange(of: notificationManger.authorizationStatus) {authorizationStatus in
+            switch authorizationStatus {
+            case .notDetermined:
+                notificationManger.requestAuthorization()
+                print("Requesting for authorization")
+            case .authorized:
+                //get local notification
+                print("")
+                
+            default:
+                print("")
+            }
+            
+        }
     }
 }
 
