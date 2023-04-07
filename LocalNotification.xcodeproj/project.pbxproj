@@ -15,6 +15,7 @@
 		A03113A729DFEDFA002901BA /* LocalNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113A629DFEDFA002901BA /* LocalNotificationUITests.swift */; };
 		A03113A929DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113A829DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift */; };
 		A03113B629DFEEEA002901BA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113B529DFEEEA002901BA /* NotificationManager.swift */; };
+		A03113B829DFF97B002901BA /* CreateNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113B729DFF97B002901BA /* CreateNotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A03113A629DFEDFA002901BA /* LocalNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationUITests.swift; sourceTree = "<group>"; };
 		A03113A829DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A03113B529DFEEEA002901BA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A03113B729DFF97B002901BA /* CreateNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A031138A29DFEDF9002901BA /* LocalNotificationApp.swift */,
 				A031138C29DFEDF9002901BA /* ContentView.swift */,
+				A03113B729DFF97B002901BA /* CreateNotificationView.swift */,
 				A03113B529DFEEEA002901BA /* NotificationManager.swift */,
 				A031138E29DFEDFA002901BA /* Assets.xcassets */,
 				A031139029DFEDFA002901BA /* LocalNotification.entitlements */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03113B629DFEEEA002901BA /* NotificationManager.swift in Sources */,
+				A03113B829DFF97B002901BA /* CreateNotificationView.swift in Sources */,
 				A031138D29DFEDF9002901BA /* ContentView.swift in Sources */,
 				A031138B29DFEDF9002901BA /* LocalNotificationApp.swift in Sources */,
 			);

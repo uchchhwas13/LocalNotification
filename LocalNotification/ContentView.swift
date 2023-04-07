@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var notificationManger = NotificationManager()
+    @State private var isCreatePresented = false
     var body: some View {
         List(notificationManger.notifications, id: \.identifier) {notification in
             Text(notification.content.title)
@@ -23,19 +24,33 @@ struct ContentView: View {
                 notificationManger.requestAuthorization()
                 print("Requesting for authorization")
             case .authorized:
-                //get local notification
+                notificationManger.reloadLocalNotifications()
                 print("")
                 
             default:
                 print("")
             }
             
+        }.navigationBarItems(trailing: Button{
+            isCreatePresented = true 
+        } label: {
+            Image(systemName: "plus.circle")
+                .imageScale(.large)
+        })
+        .sheet(isPresented: $isCreatePresented) {
+            NavigationStack {
+                CreateNotificationView(notificationManager: notificationManger, isPresented: $isCreatePresented)
+            }
+            .accentColor(.primary)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationStack {
+            ContentView()
+        }
+        .accentColor(.primary)
     }
 }

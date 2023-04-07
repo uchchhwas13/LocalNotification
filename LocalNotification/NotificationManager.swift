@@ -35,4 +35,20 @@ final class NotificationManager: ObservableObject {
             }
         }
     }
+    
+    func createLocalNotification(title: String, hour: Int, min: Int, completion: @escaping (Error?)-> Void) {
+        var dateComponents = DateComponents()
+        dateComponents.hour = hour
+        dateComponents.minute = min
+        //dateComponents.weekday = 1
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = title
+        notificationContent.sound = .default
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: completion)
+    }
 }

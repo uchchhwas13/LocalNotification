@@ -14,6 +14,7 @@ struct LocalNotificationApp: App {
             NavigationStack {
                 ContentView()
             }
+            .accentColor(.primary)
         }
     }
 }
