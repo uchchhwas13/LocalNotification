@@ -39,6 +39,7 @@ struct CreateNotificationView: View {
                         Text("Create")
                             .fontWeight(.semibold)
                             .frame(maxWidth: .infinity)
+                            .contentShape(Rectangle())
                     }
                     .padding()
                     .background(Color(.systemGray5))

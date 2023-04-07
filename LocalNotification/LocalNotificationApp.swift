@@ -12,7 +12,7 @@ struct LocalNotificationApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ContentView()
+                NotificationListView()
             }
             .accentColor(.primary)
         }

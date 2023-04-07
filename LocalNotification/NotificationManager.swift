@@ -51,4 +51,8 @@ final class NotificationManager: ObservableObject {
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: completion)
     }
+    
+    func deleteLocalNotifications (identifiers: [String]) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiers)
+    }
 }

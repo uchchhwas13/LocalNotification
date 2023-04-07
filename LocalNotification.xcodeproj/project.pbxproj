@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A031138B29DFEDF9002901BA /* LocalNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031138A29DFEDF9002901BA /* LocalNotificationApp.swift */; };
-		A031138D29DFEDF9002901BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031138C29DFEDF9002901BA /* ContentView.swift */; };
+		A031138D29DFEDF9002901BA /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031138C29DFEDF9002901BA /* NotificationListView.swift */; };
 		A031138F29DFEDFA002901BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A031138E29DFEDFA002901BA /* Assets.xcassets */; };
 		A031139329DFEDFA002901BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A031139229DFEDFA002901BA /* Preview Assets.xcassets */; };
 		A031139D29DFEDFA002901BA /* LocalNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031139C29DFEDFA002901BA /* LocalNotificationTests.swift */; };
@@ -16,6 +16,7 @@
 		A03113A929DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113A829DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift */; };
 		A03113B629DFEEEA002901BA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113B529DFEEEA002901BA /* NotificationManager.swift */; };
 		A03113B829DFF97B002901BA /* CreateNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113B729DFF97B002901BA /* CreateNotificationView.swift */; };
+		A03113BA29E01132002901BA /* InfoOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03113B929E01132002901BA /* InfoOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		A031138729DFEDF9002901BA /* LocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A031138A29DFEDF9002901BA /* LocalNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationApp.swift; sourceTree = "<group>"; };
-		A031138C29DFEDF9002901BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A031138C29DFEDF9002901BA /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
 		A031138E29DFEDFA002901BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A031139029DFEDFA002901BA /* LocalNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalNotification.entitlements; sourceTree = "<group>"; };
 		A031139229DFEDFA002901BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		A03113A829DFEDFA002901BA /* LocalNotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A03113B529DFEEEA002901BA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A03113B729DFF97B002901BA /* CreateNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationView.swift; sourceTree = "<group>"; };
+		A03113B929E01132002901BA /* InfoOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				A031138A29DFEDF9002901BA /* LocalNotificationApp.swift */,
-				A031138C29DFEDF9002901BA /* ContentView.swift */,
+				A031138C29DFEDF9002901BA /* NotificationListView.swift */,
+				A03113B929E01132002901BA /* InfoOverlayView.swift */,
 				A03113B729DFF97B002901BA /* CreateNotificationView.swift */,
 				A03113B529DFEEEA002901BA /* NotificationManager.swift */,
 				A031138E29DFEDFA002901BA /* Assets.xcassets */,
@@ -266,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03113B629DFEEEA002901BA /* NotificationManager.swift in Sources */,
+				A03113BA29E01132002901BA /* InfoOverlayView.swift in Sources */,
 				A03113B829DFF97B002901BA /* CreateNotificationView.swift in Sources */,
-				A031138D29DFEDF9002901BA /* ContentView.swift in Sources */,
+				A031138D29DFEDF9002901BA /* NotificationListView.swift in Sources */,
 				A031138B29DFEDF9002901BA /* LocalNotificationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
